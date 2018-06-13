@@ -26,7 +26,7 @@
 
 ## 使用
 
-通过 `script` 标签引入
+通过 `script` 标签依次引入
 
 ```html
 <script src="http://webapi.amap.com/maps?v=1.4.6&key=f2cb2852df505ce99f414bff0b93915b"></script>
