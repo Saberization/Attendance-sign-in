@@ -24,6 +24,16 @@
 - `http://api.map.baidu.com/api?v=2.0&ak=K5LXDCfHLnGvLDQsZx0AKyXNV5kLObYF`
 - `amap.min.js`
 
+## 使用
+
+通过 `script` 标签引入
+
+```html
+<script src="http://webapi.amap.com/maps?v=1.4.6&key=f2cb2852df505ce99f414bff0b93915b"></script>
+<script src="http://api.map.baidu.com/api?v=2.0&ak=K5LXDCfHLnGvLDQsZx0AKyXNV5kLObYF"></script>
+<script src="./dist/amap.min.js"></script>
+```
+
 ## 配置和方法
 
 __DOM结构__
