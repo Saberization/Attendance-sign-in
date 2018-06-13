@@ -12,7 +12,11 @@
 
 ![](images/amap2.png)
 
-- [高德地图](http://fe.epoint.com.cn:8080/m7showcase/showcase/widgets/amap/amap.html)
+- [在线预览](http://fe.epoint.com.cn:8080/m7showcase/showcase/widgets/amap/amap.html)
+
+**二维码：**
+
+![](https://ws1.sinaimg.cn/large/006d7zD3gy1fs9c5kj1oxj30e00e03z8.jpg)
 
 ## 依赖资源
 
