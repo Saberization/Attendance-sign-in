@@ -1,0 +1,84 @@
+<!-- 
+        作者：郭天琦
+        创建时间: 2018-06-12
+        版本: [1.0, 2018-06-12 ]
+        描述：基于高德地图的考勤签到
+-->
+
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.6&key=f2cb2852df505ce99f414bff0b93915b"></script>
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=K5LXDCfHLnGvLDQsZx0AKyXNV5kLObYF"></script>
+        <title>高德地图</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            
+            ul,
+            li {
+                list-style-type: none;
+            }
+            
+            #container {
+                width: 100%;
+                height: 270px;
+                overflow: hidden;
+            }
+            
+            .near-list .near-list-item {
+                padding-left: 10px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                background-color: #fff;
+                border-bottom: 1px solid #e1e1e1;
+            }
+            
+            .near-list .near-list-item:active {
+                background-color: #eee;
+            }
+            
+            .near-list .near-list-item p {
+                margin: 0;
+                color: #666;
+                font-size: 14px;
+            }
+            
+            .near-list .near-list-item p:first-child {
+                margin-bottom: 3px;
+                font-size: 16px;
+                color: #000;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- 百度地图 -->
+        <div id="container"></div>
+
+        <!-- 附近的点 -->
+        <ul class="near-list" id="near-list"></ul>
+
+        <script type="text/template" id="tpl">
+            {{#items}}
+            <li class="near-list-item" data-name="{{name}}" data-addr="{{addr}}">
+                <p>{{name}}</p>
+                <p>{{addr}}</p>
+            </li>
+            {{/items}}
+        </script>
+        
+        <script src="./libs/mustache.min.js"></script>
+        <script src="./libs/tap.min.js"></script>
+        <script src="./dist/amap.min.js"></script>
+        <script src="./src/showcase.js"></script>
+    </body>
+
+</html>
